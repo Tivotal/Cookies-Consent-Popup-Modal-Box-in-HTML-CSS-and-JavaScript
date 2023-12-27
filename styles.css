@@ -1,0 +1,101 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0b8c4c;
+}
+
+.wrapper {
+  position: fixed;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  bottom: 50px;
+  right: -370px;
+  padding: 15px 25px 22px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+}
+
+.wrapper.show {
+  right: 20px;
+}
+
+.wrapper .header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wrapper .header i {
+  color: #0b8c4c;
+  font-size: 32px;
+}
+
+.wrapper .header h2 {
+  color: #0b8c4c;
+  font-weight: 500;
+}
+
+.wrapper .text {
+  margin-top: 16px;
+}
+
+.wrapper .text p {
+  color: #333;
+  font-size: 16px;
+}
+
+.wrapper .text p a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+.wrapper .text p a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btns {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .btns .btn {
+  width: calc(100% / 2 - 10px);
+  background: #0b8c4c;
+  color: #fff;
+  padding: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wrapper .btns .btn.accept:hover {
+  background: #0a7a42;
+}
+
+.wrapper .btns .btn.decline {
+  border: 2px solid #0b8c4c;
+  background: #fff;
+  color: #0b8c4c;
+}
+
+.wrapper .btns .btn.decline:hover {
+  background: #0b8c4c;
+  color: #fff;
+}
